@@ -40,7 +40,9 @@
 #define ENCODER_DIRECTION_FLIP
 
 
-
+#define RGBLIGHT_SLEEP
+//
+#define RGBLIGHT_LAYERS
 
 /* ws2812 RGB LED */
 #define RGB_DI_PIN D3
@@ -58,11 +60,13 @@
 	//#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 	//#define RGBLIGHT_EFFECT_SNAKE
 	#define RGBLIGHT_EFFECT_KNIGHT
+
 	//#define RGBLIGHT_EFFECT_CHRISTMAS
 	//#define RGBLIGHT_EFFECT_STATIC_GRADIENT
 	//#define RGBLIGHT_EFFECT_RGB_TEST
 	//#define RGBLIGHT_EFFECT_ALTERNATING
 	//#define RGBLIGHT_EFFECT_TWINKLE
+
 
     #define RGBLED_NUM 58
 	#define RGBLED_SPLIT {29, 29} // Apparently nothing defined here
@@ -77,6 +81,7 @@
 
 #ifdef RGB_MATRIX_ENABLE
 #   define RGB_MATRIX_KEYPRESSES // reacts to keypresses
+
 #   define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)
 #   define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
 #   define RGB_MATRIX_FRAMEBUFFER_EFFECTS
@@ -113,6 +118,7 @@
  // #   undef ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
  // #   undef ENABLE_RGB_MATRIX_TYPING_HEATMAP
  // #   undef ENABLE_RGB_MATRIX_DIGITAL_RAIN
+
  // #   undef ENABLE_RGB_MATRIX_SOLID_REACTIVE
  // #   undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
  // #   undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
